@@ -1,11 +1,11 @@
-# Sierpinski Triangle GUI
+# Sierpinski Curve Generator
 
-This project is a graphical user interface (GUI) application for generating and visualizing the Sierpinski triangle. Users can modify various settings to customize the appearance and complexity of the triangle.
+This project is a graphical user interface (GUI) application for generating and visualizing Sierpinski Curves. Users can modify various settings to customize the appearance and complexity of the curves.
 
 ## Project Structure
 
 ```
-sierpinski-triangle-gui
+sierpinski-curve-generator
 ├── src
 │   ├── index.html        # Main HTML document
 │   ├── styles.css       # Styles for the application
@@ -23,7 +23,7 @@ sierpinski-triangle-gui
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd sierpinski-triangle-gui
+   cd sierpinski-curve-generator
    ```
 
 2. **Install dependencies:**
@@ -36,9 +36,9 @@ sierpinski-triangle-gui
 
 ## Usage
 
-- Use the GUI to adjust the settings for the Sierpinski triangle, such as the recursion level and triangle size.
-- The triangle will be rendered dynamically based on the selected settings.
+- Use the GUI to adjust the settings for the Sierpinski Curve, such as the recursion level and sides.
+- The curve will be rendered dynamically based on the selected settings.
 
-## About the Sierpinski Triangle
+## About the Sierpinski Curve
 
-The Sierpinski triangle is a fractal that is created by recursively subdividing an equilateral triangle into smaller equilateral triangles. This project allows users to explore the beauty of this mathematical construct through interactive visualization.
+The Sierpinski Curve is a fractal that is created by recursively subdividing an equilateral shape into smaller equivalent shapes. This project allows users to explore the beauty of this mathematical construct through interactive visualization.
