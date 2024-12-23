@@ -1,5 +1,13 @@
-const canvas = document.getElementById('triangleCanvas');
+const canvas = document.getElementById('curveCanvas');
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext('2d');
+
+// Set canvas to higher resolution
+const scale = window.devicePixelRatio;
+canvas.width *= scale;
+canvas.height *= scale;
+ctx.scale(scale, scale);
 
 document.getElementById('level').addEventListener('input', drawShape);
 document.getElementById('sides').addEventListener('input', drawShape);
@@ -11,7 +19,7 @@ function drawShape() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeStyle = getNeonColor();
     ctx.lineWidth = 2; // Set line width to make it more visible
-    drawSierpinski(ctx, canvas.width / 2, canvas.height / 2, canvas.width / 2, level, sides);
+    drawSierpinski(ctx, canvas.width / 2 / scale, canvas.height / 2 / scale, canvas.width / 3 / scale, level, sides); // Adjust size to fit within canvas
 }
 
 function drawSierpinski(ctx, x, y, size, level, sides) {

@@ -2,9 +2,9 @@
 
 const memo = {};
 
-function drawSierpinski(x, y, size, depth) {
+function drawSierpinskiCurve(x, y, size, depth) {
     if (depth === 0) {
-        drawTriangle(x, y, size);
+        drawCurve(x, y, size);
         return;
     }
 
@@ -14,9 +14,9 @@ function drawSierpinski(x, y, size, depth) {
     }
 
     const half = size / 2;
-    drawSierpinski(x, y, half, depth - 1);
-    drawSierpinski(x + half, y, half, depth - 1);
-    drawSierpinski(x + half / 2, y - half * Math.sqrt(3) / 2, half, depth - 1);
+    drawSierpinskiCurve(x, y, half, depth - 1);
+    drawSierpinskiCurve(x + half, y, half, depth - 1);
+    drawSierpinskiCurve(x + half / 2, y - half * Math.sqrt(3) / 2, half, depth - 1);
 
     memo[key] = true;
 }
