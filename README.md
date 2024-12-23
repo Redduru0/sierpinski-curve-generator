@@ -1,6 +1,6 @@
 # Sierpinski Curve Generator
 
-This project is a graphical user interface (GUI) application for generating and visualizing Sierpinski curves. Users can modify various settings to customize the appearance and complexity of the curves.
+This project is a graphical user interface (GUI) application for generating and visualizing Sierpinski Curves. Users can modify various settings to customize the appearance and complexity of the curves.
 
 ## Project Structure
 
