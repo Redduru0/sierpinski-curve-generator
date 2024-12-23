@@ -1,0 +1,14 @@
+{
+  "name": "sierpinski-triangle-gui",
+  "version": "1.0.0",
+  "description": "A graphical user interface for generating and modifying Sierpinski triangles.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
